@@ -1,6 +1,9 @@
 <nav class="navbar navbar-expand-md navbar-light sticky-top bg-white text-uppercase px-md-0 py-md-3">
   <div class="container-fluid">
-    <%= link_to data.site.title, '/', class: 'navbar-brand' %>
+    <% link_to '/', class: 'navbar-brand' do %>
+      <%= image_tag 'shemss-word-mark-logo-a-designer-home-company.svg',
+        alt: 'Shemss', style: 'height: 1.5rem' %>
+    <% end %>
     <button class="navbar-toggler" type="button" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
