@@ -99,8 +99,12 @@ configure :build do
   activate :gzip
 
   # Fingerprints on assets
-  activate :asset_hash, ignore: %w(stylesheets/default-skin.*),
-    exts: (app.config[:asset_extensions] - %w(.ico .map) + %w(.mp4))
+  activate :asset_hash,
+    exts: (app.config[:asset_extensions] - %w(.ico .map) + %w(.mp4)),
+    ignore: %w(
+      stylesheets/default-skin.*
+      favicon* mstile-* android-chrome-* apple-touch-icon* safari-pinned-tab*
+    )
 end
 
 activate :s3_sync
