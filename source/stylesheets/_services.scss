@@ -27,31 +27,31 @@
 
     &:nth-child(1) {
       &::before {
-        background-color: rgb(13,129,134);
+        background-color: #3d6be1;
       }
 
       &::after {
-        border-bottom-color: rgb(13,129,134);
+        border-bottom-color: #3d6be1;
       }
     }
 
     &:nth-child(2) {
       &::before {
-        background-color: rgb(196,217,58);
+        background-color: #36a0f7;
       }
 
       &::after {
-        border-bottom-color: rgb(196,217,58);
+        border-bottom-color: #36a0f7;
       }
     }
 
     &:nth-child(3) {
       &::before {
-        background-color: rgb(232,194,107);
+        background-color: #34caed;
       }
 
       &::after {
-        border-bottom-color: rgb(232,194,107);
+        border-bottom-color: #34caed;
       }
     }
   }
