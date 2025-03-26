@@ -1,10 +1,11 @@
-import React from 'react'
-import { render } from 'react-dom'
+import React, { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
 
 import Photos from './gallery/Photos'
 
 window.Application = {
   start (props) {
-    render(<Photos {...props} />, document.getElementById('ApplicationRoot'))
+    createRoot(document.getElementById('ApplicationRoot'))
+    .render(<StrictMode><Photos {...props} /></StrictMode>)
   }
 }
