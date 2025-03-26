@@ -71,8 +71,10 @@ activate :blog do |blog|
 end
 
 activate :external_pipeline,
-  name: :parcel,
-  command: build? ? 'NODE_ENV=production yarn build-js' : 'yarn dev',
+  name: :esbuild,
+  command: build? ?
+    'NODE_ENV=production yarn build-js --minify' :
+    'yarn build-js --watch',
   source: 'tmp/assets',
   latency: 1
 
