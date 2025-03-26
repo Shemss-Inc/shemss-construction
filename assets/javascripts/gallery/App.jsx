@@ -27,7 +27,7 @@ const App = ({ photos, projects, tags, ...props }) => {
     addEventListener('resize', mmChanged)
     return () => {
       mm.removeListener(mmChanged)
-      removeEventListener(mmChanged)
+      removeEventListener('resize', mmChanged)
     }
   }, [])
 
